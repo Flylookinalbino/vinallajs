@@ -1,0 +1,22 @@
+{
+  "name": "vinallajs",
+  "version": "1.0.0",
+  "description": "Javascript Project",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flylookinalbino/vinallajs.git"
+  },
+  "author": "Khan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Flylookinalbino/vinallajs/issues"
+  },
+  "homepage": "https://github.com/Flylookinalbino/vinallajs#readme",
+  "dependencies": {
+    "tailwindcss": "^1.8.2"
+  }
+}
