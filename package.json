@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Flylookinalbino/vinallajs#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "tailwindcss": "^1.8.2"
   }
 }

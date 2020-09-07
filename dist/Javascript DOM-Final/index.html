@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="./css/fontawsome.css">
     <title>Javascript DOM - Final</title>
 </head>
 <body>
-    <span class=" font-bold text-2xl text-teal-800">Hello</span>
+    <div class="w-full bg-teal-800 shadow-2xl">
+        <div class="container m-auto">
+            <div class="grid grid-cols-12 gap-2">
+                <header class="col-span-6 text-white p-1 text-center text-3xl"><span class=" text-teal-300 ">Javascript DOM</span> - Item Lister</header>
+                <input type="text" id="filter" class="col-span-5 px-2  inline-block h-10 self-center rounded " placeholder="Search">
+                <i class="fas fa-search col-span-1 object-right inline-block -ml-8 mt-4 text-teal-700"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full bg-teal mt-2">
+        <div class="container m-auto shadow-2xl ">
+            <div class="grid grid-row-2">
+                <div class="grid grid-cols-12 border border-black bg-teal-800">
+                    <h2 class=" col-span-6 text-center my-2 font-bold text-white antialiased text-2xl">Add Items</h2>
+                    <form id="addForm" class="col-span-6">
+                        <input type="text" id="item" class="inline-block h-8 w-5/6 my-2 pl-2">
+                        <input type="submit" value="Submit" class="ml-2 my-2 rounded bg-teal-700 text-white p-1 px-4 hover:bg-white hover:text-black">
+                    </form>
+                </div>
+                <div>
+                    <h2 class="m-2 text-2xl antialiased text-center">Items</h2> <hr>
+                    <ul id="items" class="grid grid-cols-12 mt-2 mb-6 px-2">
+                        <li class=" listItem border border-gray-400 shadow-lg col-start-2 col-span-9 p-1 mt-2 pl-10">Item 1</li>
+                        <button class=" buttonItem col-span-1 border-t  bg-red-700 text-white p-1 mt-2 hover:bg-red-600 ">X</button>
+                        <li class=" listItem border border-gray-400  shadow-lg col-start-2 col-span-9 pl-10 p-1 mt-2">Item 2</li>
+                        <button class="buttonItem col-span-1 border-t  bg-red-700 text-white p-1 mt-2 hover:bg-red-600 ">X</button>
+                        <li class=" listItem border border-gray-400  shadow-lg col-start-2 col-span-9 pl-10 p-1 mt-2">Item 3</li>
+                        <button class="buttonItem col-span-1 border-t  bg-red-700 text-white p-1 mt-2 hover:bg-red-600 ">X</button>
+                        <li class=" listItem border border-gray-400  shadow-lg col-start-2 col-span-9 pl-10 p-1 mt-2">Item 4</li>
+                        <button class="buttonItem col-span-1 border-t  bg-red-700 text-white p-1 mt-2 hover:bg-red-600 ">X</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
