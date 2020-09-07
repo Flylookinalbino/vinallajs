@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>Javascript BOOK LIST</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="w-full">
+        <div class="container m-auto">
+            <header class="grid grid-cols-12 gap-1">
+                <span class="fas fa-book-open col-span-5 text-6xl text-blue-600 justify-self-end place-self-center"></span>
+                <h2 class="col-span-7 text-6xl antialiased justify-self-start place-self-center font-thin">My<span class="text-blue-500">Book</span>List</h2>
+            </header>
+        </div>
+    </div>
+    <br>
+    <div id="error" class="w-full"></div>
+    <br>
+    <!-- Body -->
+    <div class="w-full">
+        <div id="main" class="container m-auto">
+            <form id="form">
+                <section class="grid grid-cols-12 gap-1">
+                    <span class="col-start-3 col-span-2 justify-self-end text-3xl text-blue-600">Title:</span>
+                    <input type="text" id="title" class=" col-start-5 col-span-6 border border-gray-400 rounded shadow-lg pl-2" placeholder="Name of Book">
+                </section>
+                <section class="grid grid-cols-12 gap-1 mt-2">
+                    <span class="col-start-3 col-span-2 justify-self-end text-3xl text-blue-600">Author:</span>
+                    <input type="text" id="author" class=" col-start-5 col-span-6 border border-gray-400 rounded shadow-lg pl-2" placeholder="Name of Author">
+                </section>
+                <section class="grid grid-cols-12 gap-1 mt-2">
+                    <span class="col-start-3 col-span-2 justify-self-end text-3xl text-blue-600">ISBN#</span>
+                    <input type="text" id="isbn" class=" col-start-5 col-span-6 border border-gray-400 rounded shadow-lg pl-2" placeholder="Books International Standard Book Number">
+                </section>
+                <section class="grid grid-cols-12 mt-2">
+                    <input type="submit" value="Add Book" class="col-start-4 col-span-7 rounded bg-blue-600 text-white p-1 mt-2 hover:bg-blue-500">
+                </section>
+            </form>
+            <hr class="mt-4">
+            <section class="grid grid-cols-12 mt-2">
+                <h1 class="col-start-4 col-span-2 border-b-4  font-bold">Title</h1>
+                <h1 class="col-start-6 col-span-2 border-b-4 font-bold">Author</h1>
+                <h1 class="col-start-8 col-span-3 border-b-4 font-bold">ISBN#</h1>
+            </section>
+            
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
