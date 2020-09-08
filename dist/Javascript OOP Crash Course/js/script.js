@@ -25,6 +25,13 @@ class Book {
     }
 }
 
+// Magazine Subclass
+class Magazine extends Book{
+    constructor(title, author, year, month){
+        super(title,author,year);
+        this.month = month;
+    }
+}
 // Instantiate Object
 const book1 = new Book('Book One', 'Author One', 2020);
 console.log(book1);
