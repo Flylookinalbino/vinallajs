@@ -334,9 +334,33 @@ xhttp.onreadystatechange = function(){
 xhttp.open("GET","File.json", true);
 xhttp.send();
 
-##AJAX Crash Course (Vinilla JavaScript)
+## AJAX Crash Course (Vinilla JavaScript)
 ### https://www.youtube.com/watch?v=82hnvUYY6QA&list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX&index=12
+#### What is AJAX?
+1. Asynchronous JavaScript & XML
+2. Set of web technologies
+3. Send & receive data asynchronously
+4. Does not interfere with current webpage
+5. JSON has replaced XML for the most part
+--------------------------- 
+|         Server          |
+---------------------------
+|  |        4             5     1. Common Request (Client       ->          Server)
+|  |        ---------------     2. Response       (Server       ->          Client)
+1  2        | AJAX Engine |     3. JS Call        (Client       ->     AJAX Engine)
+|  |        ---------------     4. XmlHttpRequest (AJAX Engine  ->          Server)
+|  |        3             6     5. XML/JSON       (Server       ->     AJAX Engine)
+---------------------------     6. HTML Response  (AJAX Engine  ->          Client)
+|         Client          |
+---------------------------
 
+#### Libararies & Other Methods
+1. jQuery
+2. Axios ++
+3. Superagent ++
+4. Fetch API ++
+5. Prototype
+6. Node HTTP 
 
 ## Fetch API Introduction
 ###
